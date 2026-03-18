@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Macbeth: Universal Quotes (Fill in the Gap)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <p class="eyebrow">Edexcel Macbeth</p>
+      <h1>Universal Quotes — One at a Time</h1>
+      <p class="sub">Fill the gap, then check your answer. Context and inference sit beside each quote.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="stage">
+      <div class="deck">
+        <div class="progress">
+          <span id="count">1 / 20</span>
+          <div class="bar"><div id="barFill"></div></div>
+        </div>
+
+        <article class="card">
+          <div class="act" id="actScene">Act 1, Scene 1</div>
+          <div class="quote" id="quoteText">
+            "Fair is foul, and <input type="text" placeholder="gap" id="gapInput" /> is fair."
+          </div>
+          <div class="translation" id="translationText"></div>
+          <div class="actions">
+            <button id="checkBtn">Check</button>
+            <button id="revealBtn" class="secondary">Reveal</button>
+            <button id="resetBtn" class="secondary">Reset</button>
+          </div>
+          <div class="feedback" id="feedback"></div>
+        </article>
+
+        <div class="nav">
+          <button id="prevBtn" class="secondary">Previous</button>
+          <button id="nextBtn">Next</button>
+        </div>
+
+        <div class="summary" id="summary">
+          <h2>Your Results</h2>
+          <p id="scoreLine"></p>
+          <ol id="summaryList"></ol>
+        </div>
+      </div>
+
+      <aside class="context">
+        <div class="panel">
+          <h2>Context</h2>
+          <p id="contextText"></p>
+        </div>
+        <div class="panel">
+          <h2>Inference</h2>
+          <p id="inferenceText"></p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tip: Keep the missing word short so your quote stays accurate under pressure.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
